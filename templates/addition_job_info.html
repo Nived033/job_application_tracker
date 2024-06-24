@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Job Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Job Application</h1>
+        <form method="POST">
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title"><br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company"><br>
+            <label for="application_date">Application Date:</label>
+            <input type="date" id="application_date" name="application_date"><br>
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
